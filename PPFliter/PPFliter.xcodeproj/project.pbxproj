@@ -16,6 +16,12 @@
 		3696867423D562BB0022BB91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3696867323D562BB0022BB91 /* main.m */; };
 		3696867E23D562BB0022BB91 /* PPFliterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3696867D23D562BB0022BB91 /* PPFliterTests.m */; };
 		3696868923D562BB0022BB91 /* PPFliterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3696868823D562BB0022BB91 /* PPFliterUITests.m */; };
+		3696869823E67BDE0022BB91 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696869723E67BDE0022BB91 /* GPUImage.framework */; };
+		3696869A23E67BEA0022BB91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696869923E67BEA0022BB91 /* CoreGraphics.framework */; };
+		3696869C23E67BF20022BB91 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696869B23E67BF20022BB91 /* QuartzCore.framework */; };
+		3696869E23E67BF90022BB91 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696869D23E67BF90022BB91 /* OpenGLES.framework */; };
+		369686A023E67C000022BB91 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3696869F23E67C000022BB91 /* CoreVideo.framework */; };
+		369686A223E67C060022BB91 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369686A123E67C060022BB91 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,12 @@
 		3696868423D562BB0022BB91 /* PPFliterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PPFliterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3696868823D562BB0022BB91 /* PPFliterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPFliterUITests.m; sourceTree = "<group>"; };
 		3696868A23D562BB0022BB91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3696869723E67BDE0022BB91 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = PPFliter/GPUImage.framework; sourceTree = "<group>"; };
+		3696869923E67BEA0022BB91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3696869B23E67BF20022BB91 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3696869D23E67BF90022BB91 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3696869F23E67C000022BB91 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		369686A123E67C060022BB91 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369686A223E67C060022BB91 /* CoreMedia.framework in Frameworks */,
+				369686A023E67C000022BB91 /* CoreVideo.framework in Frameworks */,
+				3696869E23E67BF90022BB91 /* OpenGLES.framework in Frameworks */,
+				3696869C23E67BF20022BB91 /* QuartzCore.framework in Frameworks */,
+				3696869A23E67BEA0022BB91 /* CoreGraphics.framework in Frameworks */,
+				3696869823E67BDE0022BB91 /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +106,7 @@
 				3696867C23D562BB0022BB91 /* PPFliterTests */,
 				3696868723D562BB0022BB91 /* PPFliterUITests */,
 				3696865F23D562B80022BB91 /* Products */,
+				3696869623E67BDE0022BB91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +154,19 @@
 				3696868A23D562BB0022BB91 /* Info.plist */,
 			);
 			path = PPFliterUITests;
+			sourceTree = "<group>";
+		};
+		3696869623E67BDE0022BB91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				369686A123E67C060022BB91 /* CoreMedia.framework */,
+				3696869F23E67C000022BB91 /* CoreVideo.framework */,
+				3696869D23E67BF90022BB91 /* OpenGLES.framework */,
+				3696869B23E67BF20022BB91 /* QuartzCore.framework */,
+				3696869923E67BEA0022BB91 /* CoreGraphics.framework */,
+				3696869723E67BDE0022BB91 /* GPUImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,6 +472,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PPFliter",
+				);
 				INFOPLIST_FILE = PPFliter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +492,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PPFliter",
+				);
 				INFOPLIST_FILE = PPFliter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

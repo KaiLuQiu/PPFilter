@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import <GPUImage/GPUImage.h>
+
 
 @interface ViewController ()
 
